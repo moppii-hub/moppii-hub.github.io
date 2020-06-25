@@ -12,7 +12,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Roboto", Arial, serif;
+/*  font-family: "Roboto", Arial, serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.8;
   font-size: 16px;
   background: #fff;
@@ -42,12 +43,14 @@ p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 15px;
   color: #848484;
-  font-family: "Roboto", Arial, serif;
+/*  font-family: "Roboto", Arial, serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #212121;
-  font-family: "Roboto", Arial, serif;
+/*  font-family: "Roboto", Arial, serif; */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -167,8 +170,8 @@ figure {
   margin: 0 auto;
   max-width: 620px;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .page-content img {
   max-width: 100%;
