@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>moppii Portfolio(作品紹介)</title>
+	<title>moppii Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="moppii Portfolio" />
 	<meta name="keywords" content="moppii, electronics, design, maker, 電子工作" />
@@ -46,7 +46,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
 -->
-
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -74,7 +74,7 @@
 		<header id="fh5co-header" role="banner">
 			<div class="container text-center">
 				<div id="fh5co-logo">
-					<a href="index.html">moppii Portfolio(作品紹介)</a>
+					<a href="index.html">moppii Portfolio</a>
 				</div>
 <!--
 				<nav>
@@ -83,23 +83,47 @@
 					</ul>
 				</nav>
 -->
-			</div>
+</div>
 		</header>
 		<!-- END #fh5co-header -->
 
 		<div class="page-content">
-			<!--<h1 class="mb0">title</h1>-->
-<!--			<div class="meta"><span><a href="#">aaa</a>, <a href="#">bbb</a></span></div>-->
+			<h1 class="mb0">ポケットシンセ</h1>
+			<div class="meta"><span>製作時期：2020年7月　分類：Arduino, 楽器</span></div>
 			<p>
-<!--				SNS Accounts:<a href="https://twitter.com/moppii2020">Twitter(@moppii2020)</a>, -->
-				SNS : <del>Twitter</del>※凍結中, 
-				<a href="https://qiita.com/moppii">Qiita</a>, 
-				<a href="https://github.com/moppii-hub">Github</a>,
-				<a href="https://mopilog.hatenablog.com/">Blog</a>
+				<img src="images/pocketstrsynth/appearance.jpg" alt="外観"><br/><br/>
+				<a href="https://web.archive.org/web/20180817050935/http://blog.dspsynth.eu/how-to-build-a-string-synth/">dspsynth.eu</a>というサイトに載っていた、Arduino単体で音を生成・出力するシンセ。
+				記事を見つけた当時は3Dプリンタを持っておらず、それでも作りたくて、安いおもちゃのキーボードを分解・改造して実装した（が、実装が下手くそで動作が安定しなかったため、少し前に結局捨ててしまった…）。
+				その後、3Dプリンタを入手したこと、更にはKiCadという基板設計ツールを使い始めたことから、
+				手のひらサイズのシンセサイザーを作るのにちょうど良いのでは？と思って、作ってみた。
+				見た目はすごくかわいい仕上がりになったので満足なのだけど、ポケットシンセ…というほど小型ではない（ポケットには入らない）のは反省点。<br/><br/>
+				
+				ちなみに、音源部分は実質パクリなのだけど、少しだけ本家にはない機能を追加している。
+				つまみ３つとキー８個しかないので、演奏が難しい。そのため、オクターブシフト機能を追加した。
+				また、スケールを変えられるようにした。ペンタスケールを選ぶことで、それっぽい演奏が簡単にできるようになった。<br/><br/>
+
+				それでも、やっぱり実用性を考えると難しいなと思う。今後の課題は、<br/>
+				<ul>
+					<li>シーケンサの制作（手弾きせず演奏するインタフェースの開発）</li>
+					<li>ミキサーの製作（複数の音源の音をミックスする）</li>
+					<li>スピーカ搭載</li>
+				</ul>
+				といったところかなと思う。色々作りながら考えたい。<br/><br/>
+				以下にArduinoのプログラム、ケースの3Dデータ、回路と基板の設計データがあります。<br/>
+				<ul>
+					<li><a href="https://github.com/moppii-hub/pocketStrSynth">moppii-hub/rotate_display</a>（Github）</li>
+				</ul>
 			</p>
+			<p>
+				<img src="images/pocketstrsynth/how_to_use.jpg" alt="上面"><br/><br/>
+				<img src="images/pocketstrsynth/inside.jpg" alt="中身"><br/><br/>
+			</p>
+
+			<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">先週末ステッピングモータで作った回転台座、最初はカクカクしてたけどハーフステッピングに変えたらスムーズになった。またガンプラを塗装したい欲求沸いてきて、良き。 <a href="https://t.co/OAsGwID8cz">pic.twitter.com/OAsGwID8cz</a></p>&mdash; moppii (@moppii2020) <a href="https://twitter.com/moppii2020/status/1275432110707191810?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 		</div>
 
-		<div class="container-fluid pt70 pb70">
+		<div class="container-fluid">
 			<div id="fh5co-projects-feed" class="fh5co-projects-feed clearfix masonry">
 
 				<div class="fh5co-project masonry-brick">
